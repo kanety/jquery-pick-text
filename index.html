@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="dist/jquery-pick-text.js"></script>
+</head>
+<body>
+  <h1>Basic Usage</h1>
+  <div><span class="basic">sample text 1</span></div>
+  <div><input type="text" class="basic" value="sample text 2" readonly></div>
+  <script>
+  $('.basic').on('click', function(e) {
+    $(e.currentTarget).pickText();
+  });
+  </script>
+
+  <h1>Just select</h1>
+  <div><span class="select">sample text 1</span></div>
+  <div><input type="text" class="select" value="sample text 2"></div>
+  <script>
+  $('.select').on('click', function(e) {
+    $(e.currentTarget).pickText({ copy: false });
+  });
+  </script>
+</body>
+</html>

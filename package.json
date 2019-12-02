@@ -1,5 +1,6 @@
 {
   "name": "@kanety/jquery-pick-text",
+  "description": "Select and copy text from html element",
   "version": "0.1.0",
   "main": "dist/jquery-pick-text.js",
   "author": "Yoshikazu Kaneta <kaneta@sitebridge.co.jp>",
